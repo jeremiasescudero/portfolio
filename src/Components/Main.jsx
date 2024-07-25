@@ -7,8 +7,8 @@ const Main = () => {
       <div className="left-section">
         <h1>Hola! Soy <br /> <span className="highlight">Jeremias Escudero</span></h1>
         <span className="badge">UI/UX</span>
-        <p>Desarrollador Full-Stack y futuro Ingeniero en Sistemas de Información</p>
-        <p>Actualmente mejorando mis habilidades en desarrollo full stack a través de proyectos prácticos y cursos.</p>
+        <p>Desarrollador <strong>Full-Stack</strong> y futuro <strong>Ingeniero en Sistemas de Información</strong> </p>
+        <p>Actualmente mejorando mis habilidades en desarrollo a través de proyectos prácticos y cursos.</p>
         <div className="buttons">
           <button className="btn btn-primary">Hablemos</button>
           <a href="https://github.com/jeremiasescudero?tab=repositories" className="btn btn-secondary">Ver Proyectos</a>
@@ -61,7 +61,6 @@ const Main = () => {
               <div className="skill-level" style={{ width: '80%' }}>Avanzado (80%)</div>
             </div>
           </div>
-          <button className="btn btn-know-more">Saber Más</button>
         </div>
       </div>
       <div className="right-section">
