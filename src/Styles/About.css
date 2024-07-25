@@ -1,0 +1,100 @@
+.about-me {
+    padding: 2rem;
+    background-color: #f5f5f5;
+  }
+  
+  h2{
+    padding-top: 1.5rem;
+  }
+
+  .about-me-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .skillss {
+    margin-top: 2rem;
+    height: 1000px;
+    background-color: rgb(58, 58, 58);
+    color: white;
+  }
+  
+  .tech-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los íconos horizontalmente */
+    gap: 1rem; 
+  }
+  
+  .tech-list li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .tech-icon {
+    font-size: 42px;
+    transition: transform 0.2s ease; 
+    color: orange; 
+  }
+  
+  .tech-icon:hover {
+    transform: scale(1.1); /* Aumenta el ícono ligeramente al pasar el cursor */
+  }
+  
+  .tech-list a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+  }
+  
+  .tech-tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Posición del tooltip */
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tech-list li:hover .tech-tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .certifications, .testimonials, .contact, .hobbies {
+    margin-top: 2rem;
+  }
+  
+  .certifications ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .certifications li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .testimonials blockquote {
+    border-left: 4px solid #ddd;
+    padding-left: 1rem;
+    margin: 0;
+    font-style: italic;
+  }
+  
+  .contact a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .contact a:hover {
+    text-decoration: underline;
+  }
+  
