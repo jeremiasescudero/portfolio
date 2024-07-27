@@ -11,7 +11,7 @@ const Header = () => {
       <nav>
         <ul>
           <li><Link to="/">Home</Link></li> {/* Cambié el <a> a <Link> para manejar la navegación con React Router */}
-          <li><a href="#trabajos">Trabajos<span className="arrow"> ▼</span></a></li>
+          <li><a href="/trabajos">Trabajos<span className="arrow"> ▼</span></a></li>
           <li><Link to="/aboutme">Sobre mi</Link></li> {/* Aquí usamos <Link> para la navegación a /aboutme */}
           <li><a href="https://github.com/jeremiasescudero" target="_blank" rel="noopener noreferrer">GitHub</a></li>
           <li><a href="#services">Servicios</a></li>
