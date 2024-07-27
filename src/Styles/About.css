@@ -1,94 +1,350 @@
-.about-me {
-    padding: 2rem;
-    background-color: #f9f9f9;
-    color: white;
-    font-family: 'Arial', sans-serif;
+/* src/styles/Main.css */
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: white;
+  width: 100%; 
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.left-section {
+  max-width: 50%;
+  flex: 1 1 100%;
+  padding: 1rem; 
+}
+
+.left-section h1 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+}
+
+.highlight {
+  color: #333;
+}
+
+.badge {
+  background-color: #3b82f6;
+  color: #fff;
+  padding: 0.3rem 0.6rem;
+  border-radius: 1.8rem;
+  font-size: 1.6rem;
+  display: inline-block;
+  width: 5.5rem;
+}
+
+.buttons {
+  margin: 1rem 0;
+}
+
+.btn {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s;
+}
+
+.btn-primary {
+  background-color: #ff5733;
+  color: #fff;
+  margin-right: 0.5rem;
+}
+
+.btn-primary:hover {
+  background-color: #e04e2a;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.stats {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.stats div {
+  text-align: left;
+}
+
+.stats h2 {
+  font-size: 2rem;
+  margin: 0;
+  color: #333;
+}
+
+.contact-info {
+  margin: 2rem 0;
+}
+
+.skills {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  height: 450px;
+  margin: 1rem 0; 
+}
+
+.skills .skill {
+  margin-bottom: 0rem;
+}
+
+.skill-bar {
+  background-color: #444;
+  border-radius: 0.1rem;
+  overflow: hidden;
+}
+
+.skill-level {
+  background-color: #ff5733;
+  height: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.btn-know-more {
+  background-color: #ffdd57;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s;
+}
+
+.btn-know-more:hover {
+  background-color: #e6c44f;
+}
+
+.right-section {
+  max-width: 50%;
+  flex: 1 1 100%; 
+  padding: 1rem; 
+}
+
+.right-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.3rem;
+  margin-top: -2rem;
+}
+
+
+@media (max-width: 1200px) {
+  .main-content {
+    padding: 1rem;
   }
-  
-  .about-me-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    background-color: rgb(65, 65, 65);
-    padding: 2rem;
-    border-radius: 8px;
+
+  .left-section,
+  .right-section {
+    max-width: 100%;
   }
-  
-  .about-me-logo {
+
+  .stats {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .left-section h1 {
     font-size: 2rem;
-    vertical-align: middle;
-    color: #ff8c00;
   }
-  
-  .intro, .tech-info {
-    margin-bottom: 1.5rem;
-  }
-  
-  .skills-box {
-    margin-top: 2rem;
-    text-align: center;
-  }
-  
-  .skills, .certifications, .testimonials, .contact, .hobbies {
-    margin-top: 2rem;
-  }
-  
-  .tech-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 1rem; 
-    flex-wrap: wrap;
-  }
-  
-  .tech-icon {
-    font-size: 3rem; 
-    transition: transform 0.3s;
-    color: #ffbf00;
-  }
-  
-  .tech-icon:hover {
-    transform: scale(1.5);
-  }
-  
-  .section-icon {
+
+  .stats h2 {
     font-size: 1.5rem;
-    vertical-align: middle;
-    color: #ff8c00;
-    margin-right: 0.5rem;
   }
-  
-  .certifications ul, .hobbies p, .testimonials blockquote, .contact p {
-    text-align: center;
+
+  .skills {
+    height: auto;
+    padding: 1rem 0;
   }
-  
-  blockquote {
-    font-style: italic;
-    border-left: 4px solid #0070f3;
-    padding-left: 1rem;
-    margin: 1rem 0;
-  }
-  
-  blockquote footer {
-    text-align: right;
+
+  .btn {
+    padding: 0.5rem 1rem;
     font-size: 0.9rem;
-    margin-top: 0.5rem;
-    color: #555;
   }
-  
-  .contact a {
-    color: #0070f3;
-    text-decoration: none;
+
+  .btn-know-more {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.9rem;
   }
-  
-  .contact a:hover {
-    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .left-section h1 {
+    font-size: 1.5rem;
   }
-  
-  li {
-    text-decoration: none;
+
+  .stats h2 {
+    font-size: 1.2rem;
   }
-  ul{
-    list-style: none;
-  }  
+
+  .btn {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  .btn-know-more {
+    padding: 0.2rem 0.6rem;
+    font-size: 0.8rem;
+  }
+}
+
+
+
+.about-me {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.about-me-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(65, 65, 65);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.about-me-logo {
+  font-size: 2rem;
+  vertical-align: middle;
+  color: #ff8c00;
+}
+
+.intro, .tech-info {
+  margin-bottom: 1.5rem;
+}
+
+.skills-box {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.skills, .certifications, .testimonials, .contact, .hobbies {
+  margin-top: 2rem;
+}
+
+.tech-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem; 
+  flex-wrap: wrap;
+}
+
+.tech-icon {
+  font-size: 3rem; 
+  transition: transform 0.3s;
+  color: #ffbf00;
+}
+
+.tech-icon:hover {
+  transform: scale(1.5);
+}
+
+.section-icon {
+  font-size: 1.5rem;
+  vertical-align: middle;
+  color: #ff8c00;
+  margin-right: 0.5rem;
+}
+
+.certifications ul, .hobbies p, .testimonials blockquote, .contact p {
+  text-align: center;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 4px solid #0070f3;
+  padding-left: 1rem;
+  margin: 1rem 0;
+}
+
+blockquote footer {
+  text-align: right;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+.contact a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+li {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+
+@media (max-width: 1200px) {
+  .about-me-content {
+    padding: 1.5rem;
+  }
+
+  .tech-list {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-me {
+    padding: 1rem;
+  }
+
+  .about-me-content {
+    padding: 1rem;
+  }
+
+  .about-me-logo {
+    font-size: 1.5rem;
+  }
+
+  .tech-icon {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-me {
+    padding: 0.5rem;
+  }
+
+  .about-me-content {
+    padding: 0.5rem;
+  }
+
+  .about-me-logo {
+    font-size: 1.2rem;
+  }
+
+  .tech-icon {
+    font-size: 2rem;
+  }
+}

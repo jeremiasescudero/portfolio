@@ -10,7 +10,7 @@ const Main = () => {
         <p>Desarrollador <strong>Full-Stack</strong> y futuro <strong>Ingeniero en Sistemas de Información</strong> </p>
         <p>Actualmente mejorando mis habilidades en desarrollo a través de proyectos prácticos y cursos.</p>
         <div className="buttons">
-          <button className="btn btn-primary">Hablemos</button>
+          <a href="https://wa.me/3544400854" className="btn btn-primary">Hablemos!</a>
           <a href="https://github.com/jeremiasescudero?tab=repositories" className="btn btn-secondary">Ver Proyectos</a>
         </div>
         <div className="stats">
