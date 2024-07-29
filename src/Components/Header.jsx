@@ -14,7 +14,7 @@ const Header = () => {
           <li><a href="/trabajos">Trabajos<span className="arrow"> ▼</span></a></li>
           <li><Link to="/aboutme">Sobre mi</Link></li> {/* Aquí usamos <Link> para la navegación a /aboutme */}
           <li><a href="https://github.com/jeremiasescudero" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-          <li><a href="#services">Servicios</a></li>
+          <li><a href="/servicios">Servicios</a></li>
         </ul>
       </nav>
       <button className="chat-btn">Chat</button>

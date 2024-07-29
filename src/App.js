@@ -5,6 +5,7 @@ import Main from './Components/Main.jsx';
 import {Footer} from './Components/Footer.jsx';
 import Trabajos from './Components/Trabajos.jsx'
 import Header from './Components/Header.jsx';
+import Servicios from './Components/Servicios.jsx'
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <Route path="/" element={<Main />} />
             <Route path="/aboutme" element={<About />} />
             <Route path="/trabajos" element={<Trabajos/>}/>
+            <Route path="/servicios" element={<Servicios/>}/>
           </Routes>
         </main>
         <Footer />
